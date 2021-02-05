@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:R R7
 U 1 1 601B083C
-P 4100 3250
-F 0 "R7" H 4030 3204 50  0000 R CNN
-F 1 "0R1" H 4030 3295 50  0000 R CNN
-F 2 "Current_Sense_Module:PCS2728DR1000ET" V 4030 3250 50  0001 C CNN
-F 3 "~" H 4100 3250 50  0001 C CNN
-	1    4100 3250
+P 4150 3250
+F 0 "R7" H 4080 3204 50  0000 R CNN
+F 1 "0R1" H 4080 3295 50  0000 R CNN
+F 2 "Current_Sense_Module:PCS2728DR1000ET" V 4080 3250 50  0001 C CNN
+F 3 "~" H 4150 3250 50  0001 C CNN
+	1    4150 3250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -93,13 +93,13 @@ $EndComp
 Wire Wire Line
 	5200 2750 4950 2750
 Wire Wire Line
-	4450 2750 4100 2750
+	4450 2750 4150 2750
 Wire Wire Line
-	4100 2750 4100 3100
+	4150 2750 4150 3100
 Wire Wire Line
-	4100 3400 4100 3750
+	4150 3400 4150 3750
 Wire Wire Line
-	4100 3750 4450 3750
+	4150 3750 4450 3750
 Wire Wire Line
 	4750 3750 4950 3750
 Wire Wire Line
@@ -149,26 +149,7 @@ $EndComp
 Connection ~ 5650 3250
 Wire Wire Line
 	6800 3250 7000 3250
-$Comp
-L Connector:Conn_01x03_Male J2
-U 1 1 601E9591
-P 4700 4600
-F 0 "J2" H 4672 4578 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 4672 4533 50  0001 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 4700 4600 50  0001 C CNN
-F 3 "~" H 4700 4600 50  0001 C CNN
-	1    4700 4600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 2300 4100 2400
-Connection ~ 4100 2750
-Connection ~ 4100 2400
-Wire Wire Line
-	4100 2400 4100 2500
-Connection ~ 4100 2500
-Wire Wire Line
-	4100 2500 4100 2750
+Connection ~ 4150 2750
 Wire Wire Line
 	6500 3250 6350 3250
 $Comp
@@ -340,19 +321,13 @@ U 1 1 6023F662
 P 8700 4700
 F 0 "J3" H 8672 4678 50  0000 R CNN
 F 1 "Conn_01x05_Male" H 8672 4723 50  0001 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm_SMD_Pin1Left" H 8700 4700 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 8700 4700 50  0001 C CNN
 F 3 "~" H 8700 4700 50  0001 C CNN
 	1    8700 4700
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3150 8000 4500
-Wire Wire Line
-	8000 4500 8500 4500
-Wire Wire Line
-	6900 3050 6900 4600
-Wire Wire Line
-	6900 4600 8500 4600
+	6900 3050 6900 4500
 Wire Wire Line
 	6900 3050 7050 3050
 Wire Wire Line
@@ -365,17 +340,17 @@ Wire Wire Line
 	8500 4900 8400 4900
 Wire Wire Line
 	8400 4900 8400 4950
-Text Label 8050 4500 0    50   ~ 0
-Cmp_Out
 Text Label 8050 4600 0    50   ~ 0
+Cmp_Out
+Text Label 8050 4500 0    50   ~ 0
 Cmp_Ref_In
 Text Label 8050 4700 0    50   ~ 0
 Diff_Out
 Wire Wire Line
-	4100 3750 4100 4500
-Connection ~ 4100 3750
+	4150 3750 4150 4500
+Connection ~ 4150 3750
 Wire Wire Line
-	4100 4500 4450 4500
+	4150 4500 4450 4500
 Wire Wire Line
 	4500 4600 4450 4600
 Wire Wire Line
@@ -388,54 +363,43 @@ Wire Wire Line
 Wire Wire Line
 	4450 4700 4450 4600
 Connection ~ 4450 4600
-Text Label 4150 4500 0    50   ~ 0
+Text Label 4200 4500 0    50   ~ 0
 Load
 Text Label 3600 2300 0    50   ~ 0
 Bus_Voltage
 Wire Wire Line
-	3550 2500 4100 2500
+	3550 2500 3600 2500
 Wire Wire Line
-	3550 2400 4100 2400
+	3550 2400 3600 2400
 Wire Wire Line
-	3550 2300 4100 2300
+	3550 2300 3600 2300
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 602813BF
-P 4100 2200
-F 0 "#FLG0101" H 4100 2275 50  0001 C CNN
-F 1 "PWR_FLAG" H 4100 2373 50  0000 C CNN
-F 2 "" H 4100 2200 50  0001 C CNN
-F 3 "~" H 4100 2200 50  0001 C CNN
-	1    4100 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J1
-U 1 1 60282F56
-P 3350 2400
-F 0 "J1" H 3458 2589 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 3458 2590 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm_SMD_Pin1Left" H 3350 2400 50  0001 C CNN
-F 3 "~" H 3350 2400 50  0001 C CNN
-	1    3350 2400
+P 4150 2200
+F 0 "#FLG0101" H 4150 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 2373 50  0000 C CNN
+F 2 "" H 4150 2200 50  0001 C CNN
+F 3 "~" H 4150 2200 50  0001 C CNN
+	1    4150 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 2200 4100 2300
-Connection ~ 4100 2300
+	4150 2200 4150 2300
+Connection ~ 4150 2300
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 602899EC
-P 4450 4800
-F 0 "#FLG0102" H 4450 4875 50  0001 C CNN
-F 1 "PWR_FLAG" H 4450 4973 50  0000 C CNN
-F 2 "" H 4450 4800 50  0001 C CNN
-F 3 "~" H 4450 4800 50  0001 C CNN
-	1    4450 4800
+P 4450 4905
+F 0 "#FLG0102" H 4450 4980 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 5078 50  0000 C CNN
+F 2 "" H 4450 4905 50  0001 C CNN
+F 3 "~" H 4450 4905 50  0001 C CNN
+	1    4450 4905
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4450 4800 4450 4700
+	4450 4905 4450 4800
 Connection ~ 4450 4700
 $Comp
 L power:PWR_FLAG #FLG0103
@@ -467,4 +431,73 @@ Wire Wire Line
 	2900 6300 3000 6300
 Wire Wire Line
 	3000 6300 3005 6300
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 602B6F0F
+P 3350 2400
+F 0 "J1" H 3480 2605 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3458 2590 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 3350 2400 50  0001 C CNN
+F 3 "~" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2500
+Connection ~ 3600 2500
+Wire Wire Line
+	3600 2500 3600 2400
+Connection ~ 3600 2400
+Wire Wire Line
+	3600 2400 3600 2300
+Connection ~ 3600 2300
+Wire Wire Line
+	3600 2300 4150 2300
+Wire Wire Line
+	4150 2300 4150 2750
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 602C6064
+P 4700 4600
+F 0 "J2" H 4830 4805 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 4808 4790 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 4700 4600 50  0001 C CNN
+F 3 "~" H 4700 4600 50  0001 C CNN
+	1    4700 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4800 4450 4800
+Connection ~ 4450 4800
+Wire Wire Line
+	4450 4800 4450 4700
+Wire Wire Line
+	8000 4600 8500 4600
+Wire Wire Line
+	8000 3150 8000 4600
+Wire Wire Line
+	6900 4500 8500 4500
+$Comp
+L Device:C C4
+U 1 1 602FCAAC
+P 4000 5900
+F 0 "C4" H 4115 5946 50  0000 L CNN
+F 1 "4.7uF" H 4115 5855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4038 5750 50  0001 C CNN
+F 3 "~" H 4000 5900 50  0001 C CNN
+	1    4000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5750 4000 5500
+Wire Wire Line
+	4000 5500 3500 5500
+Connection ~ 3500 5500
+Wire Wire Line
+	4000 6050 4000 6300
+Wire Wire Line
+	4000 6300 3500 6300
+Connection ~ 3500 6300
 $EndSCHEMATC
