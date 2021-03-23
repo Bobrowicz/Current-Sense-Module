@@ -1,4 +1,4 @@
-181093362291576
+181258315744956
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -10632,20 +10632,6 @@ Resonator_SMD_muRata_TPSKA-3pin_7.9x3.8mm_HandSoldering
 0
 0
 0
-Current_Sense_Module
-PCS2728DR1000ET
-
-
-0
-2
-2
-Current_Sense_Module
-TLC2272IDR
-
-
-0
-8
-8
 Diodes_SMD
 Diode_Bridge_DFS
 
@@ -12466,6 +12452,20 @@ Fuse_TE5_Littlefuse-395Series
 0
 0
 0
+Genesis_Cart
+Genesis_cart_edge_connector
+
+
+0
+64
+64
+Genesis_Cart
+MHS_133_Series_Switch
+
+
+0
+8
+4
 Hall-Effect_Transducers_LEM
 HTFS-Series_LEM-HallEffektCurrentTransducer
 
